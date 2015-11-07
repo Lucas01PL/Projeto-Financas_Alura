@@ -11,7 +11,7 @@ public class TesteJPA {
 	public static void main(String[] args) {
 		
 		Conta conta = new Conta();
-		conta.setTitular("Lucas Pereira");
+		conta.setTitular("Lucas Pereira de Lima");
 		conta.setBanco("HSDBC");
 		conta.setNumero("123345");
 		conta.setAgencia("321");
