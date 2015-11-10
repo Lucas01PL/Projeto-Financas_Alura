@@ -1,10 +1,12 @@
 package br.com.caelum.financas.modelo;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 
+@Entity
 @SequenceGenerator(name="sequence_conta", initialValue=1)
 public class Conta {
 
