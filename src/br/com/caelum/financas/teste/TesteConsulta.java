@@ -25,6 +25,7 @@ public class TesteConsulta {
 		query.setParameter("pConta", conta);
 		query.setParameter("pTipoMovimentacao", TipoMovimentacao.SAIDA);
 		
+		@SuppressWarnings("unchecked")
 		List<Movimentacao> movimentacoes = query.getResultList();
 		
 		for (Movimentacao movimentacao : movimentacoes) {
