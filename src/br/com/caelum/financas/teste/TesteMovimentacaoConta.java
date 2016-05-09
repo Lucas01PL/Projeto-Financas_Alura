@@ -16,13 +16,13 @@ public class TesteMovimentacaoConta {
 		
 		//Movimentacao movimentacao = manager.find(Movimentacao.class, 130);
 		//Conta conta = manager.find(Conta.class, 102);
-		Query query = manager.createQuery("select c from Conta c join fetch c.movimentacoes");
+		Query query = manager.createQuery("select distinct c from Conta c join fetch c.movimentacoes");
 		List<Conta> contas = query.getResultList();
-		
+		manager.close();
 		for (Conta conta : contas) {
 			System.out.println("Número de Movimentações da conta: "+conta.getMovimentacoes().size());
 		}
-		manager.close();
+
 		
 	}
 }

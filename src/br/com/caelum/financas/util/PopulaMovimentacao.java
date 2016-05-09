@@ -17,11 +17,11 @@ public class PopulaMovimentacao {
 
 		manager.getTransaction().begin();
 
-		Conta conta1 = manager.find(Conta.class,100);
-		Conta conta2 = manager.find(Conta.class,101);
-		Conta conta3 = manager.find(Conta.class,102);
-		Conta conta4 = manager.find(Conta.class,103);
-		Conta conta5 = manager.find(Conta.class,104);
+		Conta conta1 = manager.find(Conta.class,30);
+		Conta conta2 = manager.find(Conta.class,31);
+		Conta conta3 = manager.find(Conta.class,32);
+		Conta conta4 = manager.find(Conta.class,33);
+		Conta conta5 = manager.find(Conta.class,34);
 
 
 		// Movimentacoes da conta1
