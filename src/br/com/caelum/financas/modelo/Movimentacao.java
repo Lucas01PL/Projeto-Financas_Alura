@@ -17,7 +17,7 @@ import javax.persistence.TemporalType;
 
 @NamedQueries({
 				@NamedQuery(name="mediaDaContaPeloTipoMovimentacao", 
-							query="select avg(m.valor) from Movimentacao m where m.conta=:pConta and m.tipoMovimentacao = :pTipoMovimentacao") ,
+							query="select avg(m.valor) from Movimentacao m where m.conta=:pConta and m.tipo = :pTipoMovimentacao") ,
 				@NamedQuery(name="totalDeMovimentacoes", 
 							query="select count(m) from Movimentacao m where m.conta = :pConta")})
 @Entity
