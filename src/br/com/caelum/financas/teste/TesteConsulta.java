@@ -17,7 +17,7 @@ public class TesteConsulta {
 		EntityManager manager = new JPAUtil().getEntityManager();
 		
 		Conta conta = new Conta();
-		conta.setId(100);
+		conta.setId(30);
 		
 		Query query = manager.createQuery("select m from Movimentacao m where m.conta=:pConta"
 										+" and m.tipo = :pTipoMovimentacao"							

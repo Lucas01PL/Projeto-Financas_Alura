@@ -13,7 +13,7 @@ public class TesteGerenciamentoJPA {
         manager.getTransaction().begin();
 
         // ID de uma conta que exista no banco de dados, no caso ID: 1
-        Conta conta = manager.find(Conta.class, 60);
+        Conta conta = manager.find(Conta.class, 30);
 
         // commit antes da alteração
         manager.getTransaction().commit();
